@@ -8,21 +8,21 @@
         Title="MainWindow" Height="450" Width="499">
     <Grid Margin="0,1,0,-1">
         <DatePicker x:Name="DatePicker" HorizontalAlignment="Left" Margin="195,65,0,0" VerticalAlignment="Top" SelectedDateChanged="DateChanged"/>
-        <TextBlock x:Name="HoroscopeEnglish" HorizontalAlignment="Left" Margin="200,182,0,0" TextWrapping="Wrap" Text="Західний гороскоп " VerticalAlignment="Top" Height="16" RenderTransformOrigin="0.49,0.61"/>
-        <TextBlock x:Name="HoroscopeAsian" HorizontalAlignment="Left" Margin="200,204,0,0" TextWrapping="Wrap" Text="Китайський гороскоп " VerticalAlignment="Top"/>
-        <TextBlock x:Name="IsAdult" HorizontalAlignment="Left" Margin="200,227,0,0" TextWrapping="Wrap" Text="Дорослий " VerticalAlignment="Top" Height="16" RenderTransformOrigin="0.49,0.61"/>
-        <TextBlock x:Name="IsBirthday" HorizontalAlignment="Left" Margin="200,252,0,0" TextWrapping="Wrap" Text="День народження " VerticalAlignment="Top"/>
+        <TextBlock x:Name="HoroscopeEnglish" HorizontalAlignment="Left" Margin="200,182,0,0" TextWrapping="Wrap" Text="Western" VerticalAlignment="Top" Height="16" RenderTransformOrigin="0.49,0.61"/>
+        <TextBlock x:Name="HoroscopeAsian" HorizontalAlignment="Left" Margin="200,204,0,0" TextWrapping="Wrap" Text="Chinese" VerticalAlignment="Top"/>
+        <TextBlock x:Name="IsAdult" HorizontalAlignment="Left" Margin="200,227,0,0" TextWrapping="Wrap" Text="Adult" VerticalAlignment="Top" Height="16" RenderTransformOrigin="0.49,0.61"/>
+        <TextBlock x:Name="IsBirthday" HorizontalAlignment="Left" Margin="200,252,0,0" TextWrapping="Wrap" Text="B-day" VerticalAlignment="Top"/>
         <TextBox x:Name="FirstName" HorizontalAlignment="Left" Margin="30,68,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="FirstName_TextChanged"/>
         <TextBox x:Name="LastName" HorizontalAlignment="Left" Margin="30,112,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="LastName_TextChanged"/>
-        <Label  Content="Ім'я" HorizontalAlignment="Left" Margin="30,42,0,0" VerticalAlignment="Top"/>
-        <Label  Content="Прізвище" HorizontalAlignment="Left" Margin="30,86,0,0" VerticalAlignment="Top"/>
-        <Label Content="Дата народження" HorizontalAlignment="Left" Margin="195,38,0,0" VerticalAlignment="Top"/>
+        <Label  Content="Name" HorizontalAlignment="Left" Margin="30,42,0,0" VerticalAlignment="Top"/>
+        <Label  Content="Surname" HorizontalAlignment="Left" Margin="30,86,0,0" VerticalAlignment="Top"/>
+        <Label Content="D of bitrh" HorizontalAlignment="Left" Margin="195,38,0,0" VerticalAlignment="Top"/>
         <Label Content="E-mail" HorizontalAlignment="Left" Margin="357,42,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="Email" HorizontalAlignment="Left" Margin="357,68,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" TextChanged="Email_TextChanged"/>
         <Button x:Name="ProceedButton" Content="Proceed" HorizontalAlignment="Left" Margin="207,372,0,0" VerticalAlignment="Top" Width="83" Click="ProceedButton_Click" IsEnabled="False"/>
-        <Label x:Name="FirstNameAns" Content="Ім'я" HorizontalAlignment="Left" Margin="30,140,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="LastNameAns" Content="Прізвище" HorizontalAlignment="Left" Margin="30,166,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="BirthDayAns" Content="Дата народження" HorizontalAlignment="Left" Margin="195,154,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="EmailAns" Content="E-mail" HorizontalAlignment="Left" Margin="395,154,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="FirstNameAns" Content="Name" HorizontalAlignment="Left" Margin="30,140,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="LastNameAns" Content="Surname" HorizontalAlignment="Left" Margin="30,166,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="BirthDayAns" Content="D of birth" HorizontalAlignment="Left" Margin="195,154,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="EmailAns" Content="E-mail" HorizontalAlignment="Left" Margin="357,154,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

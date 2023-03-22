@@ -48,14 +48,14 @@ namespace _02Prokhorov
             }
             Person person = new Person(FirstName.Text, LastName.Text, Email.Text, DatePicker.SelectedDate.Value);
             person.InitializeAsync();
-            FirstNameAns.Content = "Ім'я: " + person.Name;
-            LastNameAns.Content = "Прізвище: " + person.Surname;
-            EmailAns.Content = "Електронна пошта: " + person.EmailAddress;
-            BirthDayAns.Content = "Дата народження: " + person.DateOfBirth.ToShortDateString();
-            IsAdult.Text = "Чи повнолітній: " + person.IsAdult;
-            HoroscopeEnglish.Text = "Знак сонця: " + person.SunSign;
-            HoroscopeAsian.Text = "Знак китайського зодіаку: " + person.ChineseSign;
-            IsBirthday.Text = "Чи є сьогодні днем народження: " + person.IsBirthday;
+            FirstNameAns.Content = "Name : " + person.Name;
+            LastNameAns.Content = "Surname : " + person.Surname;
+            EmailAns.Content = "E-mail: " + person.EmailAddress;
+            BirthDayAns.Content = "D of birth: " + person.DateOfBirth.ToShortDateString();
+            IsAdult.Text = "Adult: " + person.IsAdult;
+            HoroscopeEnglish.Text = "Western: " + person.SunSign;
+            HoroscopeAsian.Text = "Chinese: " + person.ChineseSign;
+            IsBirthday.Text = "B-day: " + person.IsBirthday;
 
 
         }
@@ -69,16 +69,16 @@ namespace _02Prokhorov
                 if (birthDate > today.AddYears(-age)) age--;
                 if (age > 135)
                 {
-                    throw new WrongAgeException("Та ти точно не такий старий, давай пиши справжній");
+                    throw new WrongAgeException("Too old");
                 }
                 else if (age < 0)
                 {
-                    throw new WrongAgeException("Та ти точно не такий молодий, давай пиши справжній");
+                    throw new WrongAgeException("Didn't born");
                 }
                 else
                 {
                     if (birthDate.Value.Month == today.Month && birthDate.Value.Day == today.Day)
-                        MessageBox.Show("З днем народження!");
+                        MessageBox.Show("Happy B-day!");
                     return true;
                 }
             }

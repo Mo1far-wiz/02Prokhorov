@@ -78,55 +78,55 @@ namespace _02Prokhorov
 
             if ((month == 3 && day >= 21) || (month == 4 && day <= 19))
             {
-                return "Овен";
+                return "ARIES";
             }
             else if ((month == 4 && day >= 20) || (month == 5 && day <= 20))
             {
-                return "Телець";
+                return "TAURUS";
             }
             else if ((month == 5 && day >= 21) || (month == 6 && day <= 20))
             {
-                return "Близнюки";
+                return "GEMINI";
             }
             else if ((month == 6 && day >= 21) || (month == 7 && day <= 22))
             {
-                return "Рак";
+                return "CANCER";
             }
             else if ((month == 7 && day >= 23) || (month == 8 && day <= 22))
             {
-                return "Лев";
+                return "LEO";
             }
             else if ((month == 8 && day >= 23) || (month == 9 && day <= 22))
             {
-                return "Діва";
+                return "VIRGO";
             }
             else if ((month == 9 && day >= 23) || (month == 10 && day <= 22))
             {
-                return "Терези";
+                return "LIBRA";
             }
             else if ((month == 10 && day >= 23) || (month == 11 && day <= 21))
             {
-                return "Скорпіон";
+                return "SCORPIUS";
             }
             else if ((month == 11 && day >= 22) || (month == 12 && day <= 21))
             {
-                return "Стрілець";
+                return "SAGITTARIUS";
             }
             else if ((month == 12 && day >= 22) || (month == 1 && day <= 19))
             {
-                return "Козоріг";
+                return "CAPRICORN";
             }
             else if ((month == 1 && day >= 20) || (month == 2 && day <= 18))
             {
-                return "Водолій";
+                return "AQUARIUS";
             }
             else if ((month == 2 && day >= 19) || (month == 3 && day <= 20))
             {
-                return "Риби";
+                return "PISCES";
             }
             else
             {
-                return "Неправильна дата";
+                return "Impossible date";
             }
         }
 
@@ -137,31 +137,31 @@ namespace _02Prokhorov
             switch (chineseHoroscopeIndex)
             {
                 case 0:
-                    return "Щур";
+                    return "Rat";
                 case 1:
-                    return "Бик";
+                    return "Ox";
                 case 2:
-                    return "Тигр";
+                    return "Tiger";
                 case 3:
-                    return "Кролик";
+                    return "Rabbit";
                 case 4:
-                    return "Дракон";
+                    return "Dragon";
                 case 5:
-                    return "Змія";
+                    return "Snake";
                 case 6:
-                    return "Кінь";
+                    return "Horse";
                 case 7:
-                    return "Коза";
+                    return "Goat";
                 case 8:
-                    return "Мавпа";
+                    return "Monkey";
                 case 9:
-                    return "Півень";
+                    return "Rooster";
                 case 10:
-                    return "Собака";
+                    return "Dog";
                 case 11:
-                    return "Свиня";
+                    return "Pig";
                 default:
-                    return "Неправильна дата";
+                    return "Impossible date";
             }
 
         }
